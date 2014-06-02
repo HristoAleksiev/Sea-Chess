@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SeaChess
 {
-    public class ArtificialInteligence : Player
+    public class ArtificialInteligence : Player, IMovable
     {
         public void Move()
         {

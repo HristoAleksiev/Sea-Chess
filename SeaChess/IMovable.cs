@@ -6,15 +6,8 @@ using System.Threading.Tasks;
 
 namespace SeaChess
 {
-    public class Person : Player, IMovable
+    interface IMovable
     {
-        public void Move()
-        {
-
-        }
-        private static void AskForMove()
-        {
-
-        }
+        void Move();
     }
 }
