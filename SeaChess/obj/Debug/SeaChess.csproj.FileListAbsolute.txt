@@ -7,3 +7,6 @@ c:\users\христо\documents\visual studio 2013\Projects\SeaChess\SeaChess\ob
 C:\GitRepos\SeaChess\SeaChess\bin\Debug\SeaChess.exe.config
 C:\GitRepos\SeaChess\SeaChess\obj\Debug\SeaChess.exe
 C:\GitRepos\SeaChess\SeaChess\obj\Debug\SeaChess.pdb
+C:\GitRepos\SeaChess\SeaChess\bin\Debug\SeaChess.exe
+C:\GitRepos\SeaChess\SeaChess\bin\Debug\SeaChess.pdb
+C:\GitRepos\SeaChess\SeaChess\obj\Debug\SeaChess.csprojResolveAssemblyReference.cache

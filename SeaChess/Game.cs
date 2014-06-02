@@ -11,11 +11,11 @@ namespace SeaChess
         public void Play()
         {
             int chek = 0;
-            do
+            while (chek < 1)
             {
-                chek++;
                 FieldRenderer.Render();
-            } while(chek == 0); 
+                chek++;
+            }
         }
 
         private void Turn()
