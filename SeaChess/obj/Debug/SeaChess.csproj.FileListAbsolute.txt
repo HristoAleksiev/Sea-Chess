@@ -10,3 +10,6 @@ C:\GitRepos\SeaChess\SeaChess\obj\Debug\SeaChess.pdb
 C:\GitRepos\SeaChess\SeaChess\bin\Debug\SeaChess.exe
 C:\GitRepos\SeaChess\SeaChess\bin\Debug\SeaChess.pdb
 C:\GitRepos\SeaChess\SeaChess\obj\Debug\SeaChess.csprojResolveAssemblyReference.cache
+C:\Users\Христо\Documents\GitRepos\SeaChess\SeaChess\bin\Debug\SeaChess.exe.config
+C:\Users\Христо\Documents\GitRepos\SeaChess\SeaChess\obj\Debug\SeaChess.exe
+C:\Users\Христо\Documents\GitRepos\SeaChess\SeaChess\obj\Debug\SeaChess.pdb

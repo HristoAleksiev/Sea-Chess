@@ -36,11 +36,11 @@ namespace SeaChess
             ushort randomNumber;
 
             Console.WriteLine("First let's decide who goes first!");
-            Console.Write("Pick a number between 0 and 20:");
+            Console.Write("Pick a number between 10 and 30:");
 
             userInput = ushort.Parse(Console.ReadLine());
             Console.WriteLine(userInput);
-            randomNumber = (ushort)random.Next(0, 21);
+            randomNumber = (ushort)random.Next(0, 41);
             Console.WriteLine(randomNumber);
             
             if (userInput > randomNumber)
