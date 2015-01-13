@@ -50,6 +50,8 @@
     <Compile Include="Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SeaChess.cs" />
+    <Compile Include="Text.cs" />
+    <Compile Include="TextContent.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

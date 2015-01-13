@@ -1,32 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SeaChess
+﻿namespace SeaChess
 {
+    using System;
+
     public class Field
     {
-        private char[,] grid = {{' ', ' ', ' '}, 
+        private char[,] cellValues = {{' ', ' ', ' '}, 
                                 {' ', ' ', ' '},
                                 {' ', ' ', ' '}};
 
-        public char[,] Grid
+        public char[,] CellValues 
         {
-            get
+            get 
             {
-                return grid;
+                return cellValues; 
             }
             set
             {
-                grid = value;
+                cellValues = value;
             }
+        
         }
 
         public void FillCell(ushort[] cell, char sign)
         {
-            Grid[cell[0],cell[1]] = sign;
+
         }
     }
 }

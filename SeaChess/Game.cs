@@ -1,59 +1,44 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SeaChess
+﻿namespace SeaChess
 {
+    using System;
+
     public class Game
     {
-        private delegate void firstMoveTurn();
-        private delegate void secondMoveTurn();
-        private firstMoveTurn firstMove;
-        private secondMoveTurn secondMove;
+        private Random random = new Random();
+        private string randomSelection;
+        private string decision;
 
-
-        public void Play()
+        public void Run()
         {
-            int chek = 0;
-            while (chek < 1)
+            //  Welcome the player!
+            Text.Write(TextContent.Intro);
+            
+            //  Main loop
+            do
             {
                 FieldRenderer.Render();
-                Turn();
-                firstMove();
-                secondMove();
-                chek++;
-            }
+                
+                DecideTurn();
+
+            } while (true);
         }
 
-        private void Turn()
+        private void DecideTurn()
         {
-            Random random = new Random();
-            Person person = new Person();
-            ArtificialInteligence ai = new ArtificialInteligence();
-            ushort userInput;
-            ushort randomNumber;
+            Text.Write(TextContent.Prompt);
 
-            Console.WriteLine("First let's decide who goes first!");
-            Console.Write("Pick a number between 10 and 30:");
+            decision = Console.ReadKey(true).KeyChar.ToString();
+            randomSelection = random.Next(1, 3).ToString();
 
-            userInput = ushort.Parse(Console.ReadLine());
-            Console.WriteLine(userInput);
-            randomNumber = (ushort)random.Next(0, 41);
-            Console.WriteLine(randomNumber);
-            
-            if (userInput > randomNumber)
+            Console.Clear();
+
+            if (randomSelection.Equals(decision))
             {
-                firstMove = person.Move;
-                secondMove = ai.Move;
-                Console.WriteLine("You go first!");
+                Text.Write(TextContent.YouGo);
             }
             else
             {
-                firstMove = ai.Move;
-                secondMove = person.Move;
-                Console.WriteLine("Computer goes first!");
+                Text.Write(TextContent.ComputerGoes);
             }
         }
     }
