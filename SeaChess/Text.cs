@@ -19,7 +19,7 @@
                     Console.WriteLine("Computer goes first!");
                     break;
                 case TextContent.Prompt:
-                    Console.WriteLine("Pick: Heads(1) or Tails(2)? ");
+                    Console.WriteLine("Shall we decide who goes first?\nPick: Heads(1) or Tails(2) and let's toss the coin. ");
                     break;
                 default:
                     break;
